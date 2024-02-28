@@ -89,17 +89,15 @@ document.querySelectorAll(".elem").forEach(function (elem) {
   });
 
 var span = document.getElementById('time');
-
-  function time() {
+function time() {
     var d = new Date();
     var s = d.getSeconds();
     var m = d.getMinutes();
     var h = d.getHours();
     span.textContent = 
-      ("0" + h).substr(-2) + ":" + ("0" + m).substr(-2) + ":" + ("0" + s).substr(-2);
-  }
-  
-  setInterval(time, 1000); 
+        ("0" + h).substr(-2) + ":" + ("0" + m).substr(-2) + ":" + ("0" + s).substr(-2);
+}
+setInterval(time, 1000); 
 
 circleSkew();
 circleMouseFollower();
